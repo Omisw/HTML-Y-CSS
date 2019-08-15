@@ -4,7 +4,7 @@
   font-family: "montserrat";
 }
 body{
-  background: #ddd;
+  background: #333;
 }
 .media{
   position: absolute;
@@ -13,14 +13,18 @@ body{
   transform: translate(-50%,-50%);
 }
 
-.imagen{
+.imagen {
   width: 440px;
-  height: 300px;
+  height: 280px;
   overflow: hidden;
   cursor: pointer;
 }
 
-.imagen-content{
+.imagen img {
+  width: 100%;
+}
+
+.imagen-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,43 +33,53 @@ body{
   padding: 40px;
   box-sizing: border-box;
 }
-.imagen-content h1{
-  color: #fff;
+
+.imagen-content h1 {
+  color: #333;
   text-transform: uppercase;
-  transform: translateY(20px);
+  transform: translateY(0px);
   transition: 0.4s;
 }
-.imagen:hover .imagen-content h1{
+
+.imagen:hover .imagen-content h1 {
     transform: translateY(0px);
 }
-.icons{
+
+.icons {
   position: absolute;
   right: 40px;
   bottom: 40px;
 }
-.icon{
+
+.icon {
   text-decoration: none;
   color: #333;
   font-size: 22px;
   margin: 0 10px;
   transform: translateY(80px);
 }
-.imagen:hover .icon{
+
+.imagen:hover .icon {
   transform: translateY(0px);
 }
-.icon:nth-child(1){
+
+.icon:nth-child(1) {
   transition: transform 0.4s 0.05s,color 0.4s;
 }
-.icon:nth-child(2){
+
+.icon:nth-child(2) {
   transition: transform 0.4s 0.1s,color 0.4s;
 }
-.icon:nth-child(3){
+
+.icon:nth-child(3) {
   transition: transform 0.4s 0.15s,color 0.4s;
 }
-.icon:hover{
+
+.icon:hover {
   color: #3498db;
 }
-.imagen-content::before{
+
+.imagen-content::before { 
   content: "";
   position: absolute;
   left: 0;
@@ -76,6 +90,7 @@ body{
   clip-path: polygon(0 100%,100% 0,100% 100%);
   transition: 0.5s;
 }
-.imagen-content:hover::before{
+
+.imagen-content:hover::before {
   height: 140px;
 }
