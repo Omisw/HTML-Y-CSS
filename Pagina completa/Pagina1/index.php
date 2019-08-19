@@ -189,10 +189,10 @@
 
             <div class="contacto-info">
                 <div class="mail">
-                    <img src="img/mail-icon.png" alt=""> uualucarduu@gmail.com
+                    <img src="img/mail-icon.png" alt=""> ejemplo@gmail.com
                 </div>
                 <div class="whatsapp">
-                    <img src="img/whatsapp-icon.png" alt=""> 3328713365
+                    <img src="img/whatsapp-icon.png" alt=""> 251824715652
                 </div>
             </div>
             </div>
