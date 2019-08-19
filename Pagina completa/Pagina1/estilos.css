@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+    color: #30374b;
+    margin: 50px 0; 
+}
+
+/*===== Inicio estilos de menu =====*/
+
+header{
+    background-image: linear-gradient(rgba(84,93,220,.9), rgba(96,171,245.9)), url(img/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.contenedor-menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1580px;
+    width: 100%;
+    margin: auto;
+}
+.contenedor-menu .menu-icon{
+    display: none;
+}
+.contenedor-menu  nav{
+    margin: 40px 0; 
+}
+.contenedor-menu ul {
+    display: flex;
+}
+.contenedor-menu ul li{
+    list-style: none;
+    margin-right: 40px; 
+    font-weight: 500;
+    font-size: 18px;
+}
+.contenedor-menu ul li a{
+    color: #fff;
+}
+.contenedor-menu ul li a:hover{
+    color: #333;
+}
+.contenedor-menu p{
+    font-size: 26px;
+    font-weight: 500;
+    margin: 35px 0;
+    color: #fff;
+}
+.contenedor-menu p a{
+    font-size: 26px;
+    font-weight: 500;
+    margin: 40px 0px;
+    color: #fff;
+}
+.contenedor-titulo{
+    display: flex;
+    justify-content: center;
+    margin: 25vh 0;
+    text-align: center;
+}
+.contenedor-titulo h1{
+    font-size: 60px;
+    color: #fff;
+}
+.contenedor-titulo h2{
+    font-size: 25px;
+    color: #fff;
+}
+.contenedor-titulo a, .contenido-text a,
+.publicacion-contenido a, .esperas-contenedor a,
+input[type="submit"]{
+    font-size: 14px;
+    color: #fff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    width: 128px;
+    display: inline-block;
+    margin-top: 20px;
+    border: solid 2px #5cb8ff;
+    border-radius: 10px;
+}
+.contenedor-titulo a:hover{
+    background: transparent;
+    border: solid 2px #5cb8ff;
+    color: #fff;
+}
+
+/*===== Fin estilos de menu =====*/
+/*===== Inicio estilos de seccion Sobre Mi =====*/
+.sobremi-contenido {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.sobremi-contenido img{
+    width: 378px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-text {
+    width: 35%;
+}
+.contenido-text a:hover{
+    background:  #333;
+    border: solid 2px #5cb8ff;
+    color: #fff;
+}
+
+/*===== Fin estilos de seccion Sobre Mi =====*/
+/*===== Inicio estilos de seccion Servicios =====*/
+
+.servicios-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.servicio{
+    width: 24%;
+    padding: 34px 30px 38px 30px; 
+    border-radius: 15px;
+    margin-bottom: 40px;
+    position: relative;
+    color: #fff;
+}
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+.servicio p{
+    margin-bottom: 20px;
+    max-height: 194px;
+}
+.servicios-contenido .violeta{
+    background-image: linear-gradient(to top, #5055df, #6d68f3);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+.servicios-contenido .celeste{
+    background-image: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+.ondas{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.icono{
+    float: right;
+}
+/*===== Fin estilos de seccion Servicios =====*/
+/*===== Inicio estilos de seccion Mis trabajos =====*/
+
+button.owl-prev, button.owl-next{
+    font-size: 40px !important;
+}
+span{
+    color: #71bcfa;
+}
+.owl-carousel .owl-item img{
+    width: 100%;
+}
+/*===== Fin estilos de seccion Servicios =====*/
+/*===== Inicio estilos de seccion ¿Por que trabajar conmigo? =====*/
+
+.por-que-trabajar__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.por-que-trabajar__contenido .item{
+    width: 28%;
+    text-align: center;
+}
+.por-que-trabajar__contenido .item ul li{
+    list-style: none;
+}
+.por-que-trabajar__contenido .item ul li:nth-child(2){
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.por-que-trabajar__contenido .item ul li:nth-child(3){
+    line-height: 31px;
+}
+/*===== Fin estilos de seccion ¿Por que trabajar conmigo? =====*/
+/*===== Inicio estilos de seccion Blog =====*/
+.blog{
+    background: #F9FAFC;
+}
+.blog .blog-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+.publicacion-blog img{
+    width: 100%;
+    max-height: 200px;
+}
+.publicacion-blog {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+}
+.publicacion-blog .publicacion-contenido {
+    background: #fff;
+    padding: 20px;
+}
+.publicacion-contenido h4{
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.publicacion-contenido p{
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+}
+.publicacion-contenido a{
+    width: 87px;
+}
+/*===== Fin estilos de seccion Blog =====*/
+/*===== Inicio estilos de Que esperas =====*/
+
+.esperas {
+    background: linear-gradient(rgba(84, 93, 220, .94), rgba(96, 171, 245, .9));
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+.esperas-contenedor h3{
+    margin: 0;
+    font-size: 23px;
+    color: #fff;
+}
+/*===== Fin estilos de seccion Que esperas =====*/
+/*===== Inicio estilos de Contacto =====*/
+
+.contacto form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+.contacto h3{
+    margin: 50px 0;
+}
+input[type="text"], input[type="email"]{
+    width: 45%;
+    margin-bottom: 15px;
+    padding: 18px 10px;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    outline:0px;
+}
+textarea {
+    padding: 18px 10px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    width: 100%;
+    max-height: 20px;
+    resize: none;
+    outline:0px;
+}
+input[type="submit"]{
+    width: 166px;
+    margin: auto;
+}
+.contacto-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.contacto-info img{
+    width: 28px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+/*===== Fin estilos de seccion Contacto =====*/
+/*===== Inicio estilos de seccion Footer =====*/
+
+footer{
+    background: #2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer-contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-contenedor img{
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.footer-contenedor img:hover{
+    transform: rotate(360deg);
+}
+.footer-contenedor p{
+    color: #fff;
+    margin-top: 40px;
+}
+/*===== Fin estilos de seccion Footer =====*/
+
+#whatsapp{
+    position: fixed;
+    top:80%;
+    right: 1%;;
+    z-index: 1000;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenedor-sobremi, .portafolio-contenedor,
+.por-que-trabajar__contenedor, .blog-contenido,
+.contacto-contenedor, .contenedor-servicios {
+    padding: 100px 0;
+}
+
+/*===== Inicio estilos de seccion Reponsive desing=====*/
+
+@media (max-width:1150px){
+    header{
+        height: 80vh;
+    }
+    h3{
+        font-size: 40px;
+        margin: 40px 0; 
+    }
+    .contenedor-menu .menu-icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 30px;
+    }
+    .contenedor-menu p a{
+        font-size: 26px;
+        margin: 40px 40px;
+    }
+    .contenedor-titulo{
+        margin: 10vh 0;
+    }
+    .contenedor-titulo h1 {
+        font-size: 45px;
+    }
+    .contenedor-titulo h2 {
+        font-size: 18px;
+    }
+    .contenedor-menu nav{
+        position: absolute;
+        top: 83px;
+        left: 0;
+        height: 288px;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    .contenedor-menu ul li {
+        margin: 10px 0;
+    }
+    .contenedor-menu nav ul{
+        flex-direction: column;
+    }
+    .sobremi-contenido{
+        text-align: center;
+    }
+    .sobremi-contenido img{
+        width: 90%;
+        margin: auto;
+    }
+    .contenido-text {
+        width: 60%;
+        margin: 20px;
+    }
+    .servicio {
+        width: 40%;
+        padding: 20px 30px 25px 25px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    .por-que-trabajar__contenido .item {
+        width: 40%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .publicacion-blog {
+        width: 40%;
+        margin: 10px 0;
+    }
+    input[type="text"], input[type="email"] {
+        width: 45%;
+    }
+    .contacto-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .whatsapp {
+        margin-top: 15px;
+    }
+    .footer-contenedor img {
+        margin: 0 20px;
+    }
+    .footer-contenedor p {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:800px){
+    header{
+        height: 70vh;
+    }
+    h3{
+        font-size: 30px;
+        margin: 30px 0; 
+    }
+    .contenedor-menu .menu-icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 30px;
+    }
+    .contenedor-menu nav{
+        position: absolute;
+        top: 83px;
+        left: 0;
+        height: 288px;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    .contenedor-menu ul li {
+        margin: 10px 0;
+    }
+    .contenedor-menu nav ul{
+        flex-direction: column;
+    }
+    .sobremi-contenido{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobremi-contenido img{
+        width: 50%;
+        margin: auto;
+    }
+    .contenido-text {
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .servicio {
+        width: 65%;
+        padding: 20px 30px 25px 25px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    .por-que-trabajar__contenido .item {
+        width: 80%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .blog .blog-publicaciones {
+        flex-direction: column;
+    }
+    .publicacion-blog {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"] {
+        width: 100%;
+    }
+    .contacto-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .whatsapp {
+        margin-top: 15px;
+    }
+    .footer-contenedor img {
+        margin: 0 20px;
+    }
+    .footer-contenedor p {
+        margin-top: 25px;
+    }
+    .esperas-contenedor h3 {
+        margin: 0 6px;
+    }
+}
+
+@media (max-width:500px){
+    header{
+        height: 50vh;
+    }
+    .contenedor-menu .menu-icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 30px;
+    }
+    .contenedor-menu p a{
+        font-size: 20px;
+        margin: 20px 20px;
+    }
+    .contenedor-titulo{
+        margin: 5vh 0;
+    }
+    .contenedor-titulo h1 {
+        font-size: 35px;
+    }
+    .contenedor-titulo h2 {
+        font-size: 16px;
+    }
+    .contenedor-menu nav{
+        position: absolute;
+        top: 83px;
+        left: 0;
+        height: 288px;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    .contenedor-menu ul li {
+        margin: 10px 0;
+    }
+    .contenedor-menu nav ul{
+        flex-direction: column;
+    }
+    .sobremi-contenido{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobremi-contenido img{
+        width: 70%;
+        margin: auto;
+    }
+    .contenido-text {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .servicio {
+        width: 70%;
+        padding: 20px 30px 25px 25px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    .por-que-trabajar__contenido .item {
+        width: 80%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .blog .blog-publicaciones {
+        flex-direction: column;
+    }
+    .publicacion-blog {
+        width: 100%;
+        margin: 10px 0;
+    }
+    input[type="text"], input[type="email"] {
+        width: 100%;
+    }
+    .contacto-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .whatsapp {
+        margin-top: 15px;
+    }
+    .footer-contenedor img {
+        margin: 0 20px;
+    }
+    .footer-contenedor p {
+        margin-top: 25px;
+    }
+    .esperas-contenedor h3 {
+        margin: 0 7px;
+    }
+}
+/*===== Fin estilos de seccion Reponsive desing=====*/
